@@ -96,7 +96,6 @@
 
         if (!parameters.inline) {
             return {
-                months: createCountdownElt(countdown, parameters, 'simply-months-section'),
                 days: createCountdownElt(countdown, parameters, 'simply-days-section'),
                 hours: createCountdownElt(countdown, parameters, 'simply-hours-section'),
                 minutes: createCountdownElt(countdown, parameters, 'simply-minutes-section'),
@@ -109,10 +108,6 @@
         return spanTag;
     };
 
-    function getMonthDays(year, month) {
-        return new Date(year, month, 0).getDate();
-    }
-
     /**
      * simplyCountdown, create and display the coundtown.
      * @param elt
@@ -120,14 +115,13 @@
      */
     simplyCountdown = function (elt, args) {
         var parameters = extend({
-                year: 2025,
-                month: 9,
-                day: 14,
+                year: 2015,
+                month: 6,
+                day: 28,
                 hours: 0,
                 minutes: 0,
                 seconds: 0,
                 words: {
-                    months: 'month',
                     days: 'day',
                     hours: 'hour',
                     minutes: 'minute',
@@ -186,8 +180,7 @@
                 refresh;
 
             refresh = function () {
-                var monthWord,
-                    dayWord,
+                var dayWord,
                     hourWord,
                     minuteWord,
                     secondWord;
@@ -202,24 +195,7 @@
                     secondsLeft = (targetDate - now.getTime()) / 1000;
                 }
 
-                var months = 0;
                 if (secondsLeft > 0) {
-                    //months = parseInt(secondsLeft / 2629800, 10);
-                    //secondsLeft = secondsLeft % 2629800;
-
-                    var currentYear = now.getFullYear();
-                    var currentMonth = now.getMonth() + 1;
-                    while (secondsLeft >= getMonthDays(currentYear, currentMonth) * 86400) {
-                        secondsLeft -= getMonthDays(currentYear, currentMonth) * 86400;
-                        months++;
-                        currentMonth++;
-                        if (currentMonth > 12) {
-                            currentMonth = 1;
-                            currentYear++;
-                        }
-                    }
-                    months = parseInt(months, 10);
-
                     days = parseInt(secondsLeft / 86400, 10);
                     secondsLeft = secondsLeft % 86400;
 
@@ -229,7 +205,6 @@
                     minutes = parseInt(secondsLeft / 60, 10);
                     seconds = parseInt(secondsLeft % 60, 10);
                 } else {
-                    months = 0;
                     days = 0;
                     hours = 0;
                     minutes = 0;
@@ -239,10 +214,6 @@
                 }
 
                 if (parameters.plural) {
-                    monthWord = months > 1
-                        ? parameters.words.months + parameters.words.pluralLetter
-                        : parameters.words.months;
-
                     dayWord = days > 1
                         ? parameters.words.days + parameters.words.pluralLetter
                         : parameters.words.days;
@@ -260,7 +231,6 @@
                         : parameters.words.seconds;
 
                 } else {
-                    monthWord = parameters.words.months;
                     dayWord = parameters.words.days;
                     hourWord = parameters.words.hours;
                     minuteWord = parameters.words.minutes;
@@ -270,16 +240,12 @@
                 /* display an inline countdown into a span tag */
                 if (parameters.inline) {
                     countdown.innerHTML =
-                        months + ' ' + monthWord + ', ' +
                         days + ' ' + dayWord + ', ' +
                         hours + ' ' + hourWord + ', ' +
                         minutes + ' ' + minuteWord + ', ' +
                         seconds + ' ' + secondWord + '.';
 
                 } else {
-                    fullCountDown.months.amount.textContent = (parameters.zeroPad && months.toString().length < 2 ? '0' : '') + months;
-                    fullCountDown.months.word.textContent = monthWord;
-
                     fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 2 ? '0' : '') + days;
                     fullCountDown.days.word.textContent = dayWord;
 
