@@ -46,6 +46,11 @@ body {
   content: "";
 }
 
+@font-face {
+  font-family: '4SenDai'; /*a name to be used later*/
+  src: url('../fonts/text/TCS 4SenDai Demo.ttf'); /*URL to font*/
+}
+
 a {
   color: #F14E95;
   -webkit-transition: 0.5s;
@@ -64,7 +69,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "4SenDai", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -103,7 +108,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "4SenDai", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -844,7 +849,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "4SenDai", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -1065,7 +1070,7 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
+  font-family: "4SenDai", Arial, serif;
   color: #F14E95;
   font-size: 30px;
 }
@@ -1182,7 +1187,7 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "4SenDai", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -1647,7 +1652,7 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "4SenDai", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
