@@ -265,8 +265,8 @@
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<label for="name" class="sr-only">ชื่อเรียก</label>
-									<input type="name" class="form-control" id="name" placeholder="ชื่อเรียก">
+									<label for="guestname" class="sr-only">ชื่อเรียก</label>
+									<input type="name" class="form-control" name="guestname" placeholder="ชื่อเรียก">
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
