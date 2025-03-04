@@ -5,8 +5,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get form values
-        $name = $_POST['guestname'];
-        $name = iconv("tis-620", "utf-8", $name);
+        $guestname = $_POST['guestname'];
         $group = $_POST['group'];
         $relation = $_POST['relation'];
         $follower = $_POST['follower'];
@@ -14,7 +13,7 @@
 
         // Prepare SQL statement
         $sql = "INSERT INTO guest (`name`, `group`, `relation`, `follower`, `u_date`, `status`) 
-                VALUES ('$name', '$group', '$relation', '$follower', '$u_date', 1)";
+                VALUES ('$guestname', '$group', '$relation', '$follower', '$u_date', 1)";
         $conn->query($sql);
     }
     $conn->close();
