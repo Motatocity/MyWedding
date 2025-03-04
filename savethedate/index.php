@@ -242,7 +242,7 @@
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline" action="reg.php" method="POST">
+						<form class="form-inline" action="exec/reg.php" method="POST">
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
 									<select name="group" id="group" class="form-control">
