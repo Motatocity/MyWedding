@@ -242,34 +242,45 @@
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline">
-							<div class="col-md-4 col-sm-4">
+						<form class="form-inline" action="reg.php" method="POST">
+							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<select name="relation" id="relation" class="form-control">
-										<option value="W">แขกเจ้าสาว</option>
-										<option value="M">แขกเจ้าบ่าว</option>
+									<select name="group" id="group" class="form-control">
+										<option value="Book">แขกเจ้าสาว</option>
+										<option value="Tae">แขกเจ้าบ่าว</option>
 										<option value="Both">แขกทั้ง 2 ฝ่าย</option>
 									</select>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<label for="name" class="sr-only">ชื่อเล่น / สังกัด</label>
-									<input type="name" class="form-control" id="name" placeholder="ชื่อเล่น / สังกัด">
+									<select name="relation" id="relation" class="form-control">
+										<option value="family">ครอบครัว</option>
+										<option value="guest_family">แขกของครอบครัว</option>
+										<option value="relative">ญาติพี่น้อง</option>
+										<option value="workmate">ที่ทำงาน</option>
+										<option value="friend">เพื่อน/รุ่นพี่/รุ่นน้อง</option>
+									</select>
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-4">
+							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<label for="family" class="sr-only">จำนวนผู้ติดตาม</label>
-									<input type="number" class="form-control" id="family" placeholder="จำนวนผู้ติดตาม">
+									<label for="name" class="sr-only">ชื่อเรียก</label>
+									<input type="name" class="form-control" id="name" placeholder="ชื่อเรียก">
 								</div>
+							</div>
+							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
+								<div class="form-group">
+									<label for="follower" class="sr-only">จำนวนผู้ติดตาม</label>
+									<input type="number" class="form-control" id="follower" placeholder="จำนวนผู้ติดตาม">
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<button type="submit" class="btn btn-default btn-block"><b>ฉันจะไปร่วมงาน !</b></button>
 							</div>
 							<div class="col-md-6 col-sm-6">
 								<button type="submit" class="btn btn-default btn-block"
 									style="background: #9e9e9ead;">ฉันไม่สะดวก</button>
-							</div>
-							<div class="col-md-6 col-sm-6">
-								<button type="submit" class="btn btn-default btn-block"><b>ฉันจะไปร่วมงาน !</b></button>
 							</div>
 						</form>
 					</div>
