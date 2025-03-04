@@ -5,7 +5,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get form values
-        $name = $_POST['name'];
+        $name = $_POST['guestname'];
         $name = iconv("tis-620", "utf-8", $name);
         $group = $_POST['group'];
         $relation = $_POST['relation'];
