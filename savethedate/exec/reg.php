@@ -13,7 +13,7 @@
 
         // Prepare SQL statement
         $sql = "INSERT INTO guest (`name`, `group`, `relation`, `follower`, `u_date`, `status`) 
-                VALUES ('$guestname', '$group', '$relation', '$follower', '$u_date', 1)";
+                    VALUES ('$guestname', '$group', '$relation', '$follower', '$u_date', 1)";
         $conn->query($sql);
     }
     $conn->close();
@@ -21,7 +21,6 @@
 ?>
 
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -45,7 +44,8 @@
     <div class="main-content">
         <i class="fa fa-check main-content__checkmark" id="checkmark"></i>
         <p class="main-content__body" data-lead-id="main-content-body">แล้วพบกัน <b>วันอาทิตย์ที่ 14 กันยายน 2568</b>
-            <br>โรงแรม Pullman Bangkok King Power</p>
+            <br>โรงแรม Pullman Bangkok King Power
+        </p>
     </div>
 
     <footer class="site-footer" id="footer">
