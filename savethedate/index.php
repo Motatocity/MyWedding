@@ -186,7 +186,7 @@
 						</div>
 						<div class="desc-groom">
 							<h3>Piyawat Maneenual<br><b>(Tae)</b></h3>
-							<p>👨‍💻 IT (Male, 34): "A guy with a code-driven brain, a no-nonsense attitude, and a hidden talent for making someone smile."</p>
+							<p id="tae_profile">👨‍💻 IT (Male, 34): "A guy with a code-driven brain, a no-nonsense attitude, and a hidden talent for making someone smile."</p>
 						</div>
 					</div>
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -196,7 +196,7 @@
 						</div>
 						<div class="desc-bride">
 							<h3>Pimchanok Phongpisanrat<br><b>(Book)</b></h3>
-							<p>👩‍💼 Marcom (Female, 35): "A girl with a palette of colors, a mind full of creativity, and a heart that beats for bold flavors."</p>
+							<p id="book_profile">👩‍💼 Marcom (Female, 35): "A girl with a palette of colors, a mind full of creativity, and a heart that beats for bold flavors."</p>
 						</div>
 					</div>
 				</div>
@@ -368,8 +368,8 @@
 								style="background-image: url(images/taebook001.jpg); ">
 								<a href="#" class="color-1">
 									<div class="case-studies-summary">
-										<span>14 Photos</span>
-										<h2>Two Glas of Juice</h2>
+										<span></span>
+										<h2>Our love story</h2>
 									</div>
 								</a>
 							</li>
@@ -377,8 +377,8 @@
 								style="background-image: url(images/taebook002.jpg); ">
 								<a href="#" class="color-2">
 									<div class="case-studies-summary">
-										<span>30 Photos</span>
-										<h2>Timer starts now!</h2>
+										<span></span>
+										<h2>Pre wedding moments​​</h2>
 									</div>
 								</a>
 							</li>
@@ -387,8 +387,8 @@
 								style="background-image: url(images/taebook004.jpg); ">
 								<a href="#" class="color-4">
 									<div class="case-studies-summary">
-										<span>12 Photos</span>
-										<h2>Company's Conference Room</h2>
+										<span></span>
+										<h2>Our trips together</h2>
 									</div>
 								</a>
 							</li>
@@ -397,7 +397,7 @@
 								style="background-image: url(images/taebook005.jpg); ">
 								<a href="#" class="color-3">
 									<div class="case-studies-summary">
-										<span>50 Photos</span>
+										<span></span>
 										<h2>Useful baskets</h2>
 									</div>
 								</a>
@@ -407,7 +407,7 @@
 								style="background-image: url(images/taebook008.jpg); ">
 								<a href="#" class="color-5">
 									<div class="case-studies-summary">
-										<span>90 Photos</span>
+										<span></span>
 										<h2>Timer starts now!</h2>
 									</div>
 								</a>
@@ -417,7 +417,7 @@
 								style="background-image: url(images/taebook009.jpg); ">
 								<a href="#" class="color-6">
 									<div class="case-studies-summary">
-										<span>56 Photos</span>
+										<span></span>
 										<h2>Beautiful sunset</h2>
 									</div>
 								</a>
@@ -531,6 +531,44 @@
         $(document).ready(function() {
             updateCountdown();
             setInterval(updateCountdown, 1000);
+        });
+
+		$(document).ready(function() {
+            let tae_words = [
+				'👨‍💻 "A guy with a code-driven brain, a no-nonsense attitude, and a hidden talent for making someone smile."', 
+				'👨‍💻 "A guy with a serious look, a sharp mind, and a weakness for his favorite person’s cuddles."', 
+				'👨‍💻 "A guy with a logical mind, a straight face, and a soft spot for one special person."',
+				'👨‍💻 "A problem-solver who thrives on logic and innovation. Turning complex code into seamless experiences, one line at a time."'
+			];
+			let book_words = [
+				'👩‍💼 "A girl with a palette of colors, a mind full of creativity, and a heart that beats for bold flavors."', 
+				'👩‍💼 "A storyteller at heart, crafting messages that connect and inspire. Passionate about marketing, creativity, and the power of communication."', 
+			];
+            
+            function tae_updateWord() {
+                let randomIndex = Math.floor(Math.random() * tae_words.length);
+                let newWord = tae_words[randomIndex];
+                let oldWord = $("#tae_profile");
+                
+                oldWord.fadeOut(500, function() {
+                    $(this).text(newWord).fadeIn(500);
+                });
+            }
+			function book_updateWord() {
+                let randomIndex = Math.floor(Math.random() * book_words.length);
+                let newWord = book_words[randomIndex];
+                let oldWord = $("#book_profile");
+                
+                oldWord.fadeOut(500, function() {
+                    $(this).text(newWord).fadeIn(500);
+                });
+            }
+
+            tae_updateWord();
+			book_updateWord();
+
+            setInterval(tae_updateWord, 10000);
+			setInterval(book_updateWord, 10000);
         });
 	</script>
 
