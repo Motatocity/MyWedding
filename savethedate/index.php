@@ -378,7 +378,7 @@
 								<a href="#" class="color-2">
 									<div class="case-studies-summary">
 										<span></span>
-										<h2>Pre wedding moments​​</h2>
+										<h2>Cherishing Every Smile​​</h2>
 									</div>
 								</a>
 							</li>
@@ -398,7 +398,7 @@
 								<a href="#" class="color-3">
 									<div class="case-studies-summary">
 										<span></span>
-										<h2>Useful baskets</h2>
+										<h2>The Beginning of Forever</h2>
 									</div>
 								</a>
 							</li>
@@ -408,7 +408,7 @@
 								<a href="#" class="color-5">
 									<div class="case-studies-summary">
 										<span></span>
-										<h2>Timer starts now!</h2>
+										<h2>A Countdown to Our Big Day</h2>
 									</div>
 								</a>
 							</li>
@@ -418,7 +418,7 @@
 								<a href="#" class="color-6">
 									<div class="case-studies-summary">
 										<span></span>
-										<h2>Beautiful sunset</h2>
+										<h2>Adventures of a Lifetime</h2>
 									</div>
 								</a>
 							</li>
