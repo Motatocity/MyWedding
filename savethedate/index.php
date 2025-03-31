@@ -49,16 +49,16 @@
 	<style>
         .calendar-button-google {
             display: inline-block;
-            background-color: #4285F4;
+            background-color: rgb(117, 73, 84);
             color: white;
             padding: 10px 20px;
             font-size: 16px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px;
             font-family: Arial, sans-serif;
         }
         .calendar-button-google:hover {
-            background-color: #357ae8;
+            background-color: rgb(117, 73, 84);
         }
 		.calendar-button-ios {
             display: inline-block;
@@ -73,6 +73,34 @@
         .calendar-button-ios:hover {
             background-color: #005FCC;
         }
+
+		#Countdown
+        .countdown-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .countdown-time-box {
+            background:rgb(212, 83, 83);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .countdown-label {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #fff;
+        }
     </style>
 
 </head>
@@ -82,7 +110,7 @@
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
-		<nav class="fh5co-nav" role="navigation">
+		<!--nav class="fh5co-nav" role="navigation">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
@@ -90,7 +118,7 @@
 					</div>
 				</div>
 			</div>
-		</nav>
+		</nav-->
 
 		<header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);"
 			data-stellar-background-ratio="0.5">
@@ -105,12 +133,31 @@
 									We Are Getting Married<br>
 									วันอาทิตย์ที่ 14 กันยายน 2568
 								</h2>
-								<div class="simply-countdown simply-countdown-one"></div>
+								<div class="countdown-container">
+									<div class="countdown-timer">
+										<div>
+											<div class="countdown-time-box" id="days">00</div>
+											<div class="countdown-label">วัน</div>
+										</div>
+										<div>
+											<div class="countdown-time-box" id="hours">00</div>
+											<div class="countdown-label">ชั่วโมง</div>
+										</div>
+										<div>
+											<div class="countdown-time-box" id="minutes">00</div>
+											<div class="countdown-label">นาที</div>
+										</div>
+										<div>
+											<div class="countdown-time-box" id="seconds">00</div>
+											<div class="countdown-label">วินาที</div>
+										</div>
+									</div>
+								</div><br>
 								<p>
-									<a href="webcal://book-tae-the-wedding.com/savethedate/WeddingDay.ics" class="calendar-button-ios">📅 Add to iOS Calendar</a>
+									<!--a href="webcal://book-tae-the-wedding.com/savethedate/WeddingDay.ics" class="calendar-button-ios">📅 Add to iOS Calendar</a-->
 									<a class="calendar-button-google" target="_blank"
 									href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Book❤️Tae%20Wedding%20Day%20🤵👰&dates=20250914T043000Z/20250914T070000Z&details=วันอาทิตย์ที่%2014%20กันยายน%202568%20ห้อง%20INFINITY%20BALLROOM%20โรงแรม%20Pullman%20Bangkok%20King%20Power&location=Pullman Bangkok King Power Hotel">
-										📅 Add to Google Calendar
+										📅 Add Calendar
 									</a>
 								</p>
 							</div>
@@ -138,9 +185,8 @@
 							<img src="images/groom.jpg" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
-							<h3>Piyawat Maneenual<br>(Tae)</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove</p>
+							<h3>Piyawat Maneenual<br><b>(Tae)</b></h3>
+							<p>👨‍💻 IT (Male, 34): "A guy with a code-driven brain, a no-nonsense attitude, and a hidden talent for making someone smile."</p>
 						</div>
 					</div>
 					<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -149,9 +195,8 @@
 							<img src="images/bride.jpg" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-bride">
-							<h3>Pimchanok Phongpisanrat<br>(Book)</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-								there live the blind texts. Separated they live in Bookmarksgrove</p>
+							<h3>Pimchanok Phongpisanrat<br><b>(Book)</b></h3>
+							<p>👩‍💼 Marcom (Female, 35): "A girl with a palette of colors, a mind full of creativity, and a heart that beats for bold flavors."</p>
 						</div>
 					</div>
 				</div>
@@ -185,7 +230,7 @@
 											<span>7:00 น.</span>
 											<span>8:30 น.</span>
 											<span>9:00 น.</span>
-											<span>9:30 น.</span>
+											<span>10:00 น.</span>
 										</div>
 										<div class="event-col">
 											<i class="icon-list"></i>
@@ -230,7 +275,7 @@
 						8/2 Rangnam Road, Thanon-Phayathai, Ratchathewi, 10400 Bangkok Thailand<br>
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3312338079145!2d100.53478557595618!3d13.758887786633748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29eb64a4f804b%3A0xe80009bce2fa812a!2z4LmC4Lij4LiH4LmB4Lij4Lih4Lie4Li54Lil4LmB4Lih4LiZIOC4hOC4tOC4hyDguYDguJ7guLLguYDguKfguK3guKPguYwg4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1738923689996!5m2!1sth!2sth"
-							width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+							width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"></iframe>
 					</div>
 				</div>
@@ -298,9 +343,10 @@
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<h2>แผนผังงานฉลอง</h2>
 						<i class="icon-glass"></i> ห้องอินฟินิตี้ - INFINITY BALLROOM<br>
-						<img style="max-height: 350px;"
-							src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/53/2023/03/01065551/Resize-1.jpg"></img>
 					</div>
+				</div>
+				<div class="row">
+					<img style="max-height: 350px;" src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/53/2023/03/01065551/Resize-1.jpg"></img>
 				</div>
 			</div>
 		</div>
@@ -310,9 +356,8 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<span>Our Memories</span>
-						<h2>Wedding Gallery</h2>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-							there live the blind texts.</p>
+						<h2>TAE & BOOK</h2>
+						<p>An Eternal shades of Sky : Where Every Shade Tells Our Love Story</p>
 					</div>
 				</div>
 				<div class="row row-bottom-padded-md">
@@ -338,16 +383,6 @@
 								</a>
 							</li>
 
-
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/taebook003.jpg); ">
-								<a href="#" class="color-3">
-									<div class="case-studies-summary">
-										<span>90 Photos</span>
-										<h2>Beautiful sunset</h2>
-									</div>
-								</a>
-							</li>
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
 								style="background-image: url(images/taebook004.jpg); ">
 								<a href="#" class="color-4">
@@ -367,12 +402,33 @@
 									</div>
 								</a>
 							</li>
+
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/taebook006.jpg); ">
-								<a href="#" class="color-4">
+								style="background-image: url(images/taebook008.jpg); ">
+								<a href="#" class="color-5">
 									<div class="case-studies-summary">
-										<span>45 Photos</span>
-										<h2>Skater man in the road</h2>
+										<span>90 Photos</span>
+										<h2>Timer starts now!</h2>
+									</div>
+								</a>
+							</li>
+
+							<li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/taebook009.jpg); ">
+								<a href="#" class="color-6">
+									<div class="case-studies-summary">
+										<span>56 Photos</span>
+										<h2>Beautiful sunset</h2>
+									</div>
+								</a>
+							</li>
+
+							<!--li class="one-third animate-box" data-animate-effect="fadeIn"
+								style="background-image: url(images/taebook003.jpg); ">
+								<a href="#" class="color-3">
+									<div class="case-studies-summary">
+										<span>90 Photos</span>
+										<h2>Beautiful sunset</h2>
 									</div>
 								</a>
 							</li>
@@ -388,23 +444,14 @@
 							</li>
 
 							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/taebook008.jpg); ">
-								<a href="#" class="color-5">
+								style="background-image: url(images/taebook006.jpg); ">
+								<a href="#" class="color-4">
 									<div class="case-studies-summary">
-										<span>90 Photos</span>
-										<h2>Timer starts now!</h2>
+										<span>45 Photos</span>
+										<h2>Skater man in the road</h2>
 									</div>
 								</a>
-							</li>
-							<li class="one-third animate-box" data-animate-effect="fadeIn"
-								style="background-image: url(images/taebook009.jpg); ">
-								<a href="#" class="color-6">
-									<div class="case-studies-summary">
-										<span>56 Photos</span>
-										<h2>Beautiful sunset</h2>
-									</div>
-								</a>
-							</li>
+							</li-->
 						</ul>
 					</div>
 				</div>
@@ -417,17 +464,11 @@
 				<div class="row copyright">
 					<div class="col-md-12 text-center">
 						<p>
-							<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-							<small class="block">Designed by <a href="http://freehtml5.co/"
-									target="_blank">FREEHTML5.co</a> Demo Images: <a href="http://unsplash.co/"
-									target="_blank">Unsplash</a></small>
+							เราหวังว่าจะได้พบทุกท่าน :)
 						</p>
 						<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-heart"></i></a></li>
 						</ul>
 						</p>
 					</div>
@@ -466,15 +507,31 @@
 	<script src="js/main.js"></script>
 
 	<script>
-		var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
-		// default example
-		simplyCountdown('.simply-countdown-one', {
-			year: 2025,
-			month: 9,
-			day: 14
-		});
-
+		function updateCountdown() {
+            let weddingDate = new Date("2025-09-14T12:00:00+07:00").getTime();
+            let now = new Date().getTime();
+            let timeLeft = weddingDate - now;
+            
+            if (timeLeft <= 0) {
+                $("#days, #hours, #minutes, #seconds").text("00");
+                return;
+            }
+            
+            let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            $("#days").text(days < 10 ? "0" + days : days);
+            $("#hours").text(hours < 10 ? "0" + hours : hours);
+            $("#minutes").text(minutes < 10 ? "0" + minutes : minutes);
+            $("#seconds").text(seconds < 10 ? "0" + seconds : seconds);
+        }
+        
+        $(document).ready(function() {
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        });
 	</script>
 
 </body>
