@@ -1,5 +1,5 @@
 <?php
-/*
+
     // Include the database connection
     include('db.php');
 
@@ -18,7 +18,7 @@
     }
     $conn->close();
     header("Refresh: 10; URL=../index.php");
-*/
+
 ?>
 
 <html lang="en">
