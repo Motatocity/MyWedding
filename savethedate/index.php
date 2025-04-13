@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -173,8 +174,8 @@
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<h2>Save the date!</h2>
 						<h3>
-							วันอาทิตย์ที่ 14 กันยายน 2568<br>
-							<b>โรงแรม Pullman Bangkok King Power</b>
+							Sunday 14 September, 2025<br>
+							<b>Pullman Bangkok King Power</b>
 						</h3>
 						<p>We invited you to celebrate our wedding</p>
 					</div>
@@ -212,7 +213,6 @@
 						<h2>Wedding Events</h2>
 						<p style="margin-bottom: 0px; color: #ffffffb5;">
 							Pullman Bangkok King Power Hotel<br>
-							<i class="icon-calendar"></i> วันอาทิตย์ที่ 14 กันยายน 2568<br>
 						</p>
 					</div>
 					<div class="display-t">
@@ -220,7 +220,7 @@
 							<div class="col-md-10 col-md-offset-1">
 								<div class="col-md-6 col-sm-6">
 									<div class="event-wrap animate-box">
-										<h3 class="text-center"><i class="icon-sun"></i> พิธีเช้า</h3>
+										<h3 class="text-center"><i class="icon-sun"></i> พิธีหมั้น</h3>
 										<p class="text-center">
 											วันอาทิตย์ที่ 14 กันยายน พ.ศ. 2568<br>
 											ณ ห้องอินฟินิตี้ บอลรูม<br>
@@ -271,8 +271,37 @@
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<span>We Love Each Other</span>
 						<h2>การเดินทาง</h2>
-						<i class="icon-location"></i> INFINITY BALLROOM - Pullman Bangkok King Power Hotel<br>
-						8/2 Rangnam Road, Thanon-Phayathai, Ratchathewi, 10400 Bangkok Thailand<br>
+						<h4>
+							<i class="icon-location"></i> ห้องอินฟินิตี้ บอลรูม<br>
+							โรงแรมพูลแมน คิง เพาเวอร์ กรุงเทพฯ<br>
+						</h4>
+						<div class="text-left">
+							<b class="text-primary"><i class="fa-solid fa-car-side"></i> เดินทางโดยรถยนต์</b>
+							<ul> 
+								<li> จาก <b>วงเวียนอนุสาวรีย์ชัยฯ:</b> ใช้ทางออกถนนพญาไท เลี้ยวซ้ายเข้าซอยรางน้ำ</li>
+								<li> จาก <b>ถนนศรีอยุธยา:</b> เลี้ยวซ้ายเข้าโรงแรมหลังตึกอายิโนะโมะโต๊ะ</li>
+								<li> จาก <b>ถนนราชปรารภ:</b> เลี้ยวซ้ายเข้าซอยรางน้ำ (ใกล้ปั๊มคาลเท็กซ์)</li>
+							</ul>
+
+							<b class="text-primary"><i class="fa-solid fa-forward"></i> ทางด่วน</b> ขับตามป้าย “อนุสาวรีย์ชัยสมรภูมิ”<br>
+
+							<b class="text-primary"><i class="fa-solid fa-square-parking"></i> ที่จอดรถ</b>
+							รองรับที่จอดกว่า 700 คัน เข้าได้จากถนนรางน้ำ และถนนศรีอยุธยา
+
+							<hr>
+							<b class="text-primary"><i class="fa-solid fa-train-subway"></i> รถไฟฟ้า BTS</b>
+							<ul> 
+								<li> <b>สถานีอนุสาวรีย์ชัยฯ</b> (ทางออก 2): เดินถึงโรงแรมใน 5 นาที</li>
+								<li> <b>สถานีพญาไท:</b> เดินเข้าโรงแรมจากประตูหลัง (ถ.ศรีอยุธยา) ใช้เวลา 7 นาที</li>
+							</ul>
+
+							<b class="text-primary"><i class="fa-solid fa-train-tram"></i> รถไฟฟ้า Airport Rail Link (จากสนามบินสุวรรณภูมิ)</b>
+							<ul> 
+								<li> <b>ลงสถานีพญาไท</b> เดินเข้าโรงแรมทางประตูหลัง (ถ.ศรีอยุธยา)</li>
+							</ul>
+						</div>
+						
+						<br>
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.3312338079145!2d100.53478557595618!3d13.758887786633748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29eb64a4f804b%3A0xe80009bce2fa812a!2z4LmC4Lij4LiH4LmB4Lij4Lih4Lie4Li54Lil4LmB4Lih4LiZIOC4hOC4tOC4hyDguYDguJ7guLLguYDguKfguK3guKPguYwg4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1738923689996!5m2!1sth!2sth"
 							width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
@@ -344,9 +373,12 @@
 						<h2>แผนผังงานฉลอง</h2>
 						<i class="icon-glass"></i> ห้องอินฟินิตี้ - INFINITY BALLROOM<br>
 					</div>
-				</div>
-				<div class="row">
-					<img style="max-height: 350px;" src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/53/2023/03/01065551/Resize-1.jpg"></img>
+					<div class="row">
+						<div class="text-center">
+							<!--img style="max-height: 350px;" src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/53/2023/03/01065551/Resize-1.jpg"></img-->
+							<img style="max-width: 430px;" src="images/tableplan.png"></img>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -378,7 +410,7 @@
 								<a href="#" class="color-2">
 									<div class="case-studies-summary">
 										<span></span>
-										<h2>Cherishing Every Smile​​</h2>
+										<h2>The Beginning of Forever</h2>
 									</div>
 								</a>
 							</li>
@@ -398,7 +430,7 @@
 								<a href="#" class="color-3">
 									<div class="case-studies-summary">
 										<span></span>
-										<h2>The Beginning of Forever</h2>
+										<h2>Cherishing Every Smile​​<</h2>
 									</div>
 								</a>
 							</li>

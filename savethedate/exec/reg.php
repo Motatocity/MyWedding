@@ -1,4 +1,5 @@
 <?php
+/*
     // Include the database connection
     include('db.php');
 
@@ -17,6 +18,7 @@
     }
     $conn->close();
     header("Refresh: 10; URL=../index.php");
+*/
 ?>
 
 <html lang="en">
@@ -48,6 +50,7 @@
     </div>
 
     <footer class="site-footer" id="footer">
+        <b>#booktaethewedding</b>
         <p class="site-footer__fineprint" id="fineprint">Book & Tae - The Wedding Day</p>
         <p>
             <a href="webcal://book-tae-the-wedding.com/savethedate/WeddingDay.ics" class="calendar-button-ios">📅 Add to iOS Calendar</a><br><br>
