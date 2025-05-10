@@ -160,6 +160,7 @@
 										📅 Add Calendar
 									</a>
 								</p>
+								<br><i class="fa-solid fa-chevron-up fa-flip-horizontal fa-xl" style="color:rgb(255, 165, 165);"></i><br><i class="fa-solid fa-chevron-down fa-flip-horizontal fa-xl" style="color:rgb(255, 165, 165);"></i>
 							</div>
 						</div>
 					</div>
