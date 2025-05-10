@@ -352,7 +352,7 @@
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<label for="follower" style="color: #ffffff;">คำอวยพรถึงบ่าวสาว</label>
+									<label for="follower" style="color: #ffffff;">จำนวนผู้ติดตาม</label>
 									<input type="number" class="form-control" name="follower" placeholder="จำนวนผู้ติดตาม">
 								</div>
 							</div>
