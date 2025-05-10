@@ -351,7 +351,7 @@
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
 									<label for="follower" class="sr-only">จำนวนผู้ติดตาม</label>
-									<input type="number" class="form-control" id="follower" placeholder="จำนวนผู้ติดตาม">
+									<input type="number" class="form-control" name="follower" placeholder="จำนวนผู้ติดตาม">
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6">
