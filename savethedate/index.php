@@ -321,9 +321,10 @@
 				</div>
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
-						<form class="form-inline" action="exec/reg.php" method="POST">
+						<form id="rsvpForm" class="form-inline" action="exec/reg.php" method="POST">
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
+									<label for="guestname" style="color: #ffffff;">แขกเจ้าบ่าว/เจ้าสาว</label>
 									<select name="group" id="group" class="form-control">
 										<option value="Book">แขกเจ้าสาว</option>
 										<option value="Tae">แขกเจ้าบ่าว</option>
@@ -333,6 +334,7 @@
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
+								<label for="guestname" style="color: #ffffff;">ความสัมพันธ์</label>
 									<select name="relation" id="relation" class="form-control">
 										<option value="family">ครอบครัว</option>
 										<option value="guest_family">แขกของครอบครัว</option>
@@ -344,22 +346,31 @@
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<label for="guestname" class="sr-only">ชื่อเรียก</label>
+									<label for="guestname" style="color: #ffffff;">ชื่อผู้อวยพร</label>
 									<input type="name" class="form-control" name="guestname" placeholder="ชื่อเรียก">
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<label for="follower" class="sr-only">จำนวนผู้ติดตาม</label>
+									<label for="follower" style="color: #ffffff;">คำอวยพรถึงบ่าวสาว</label>
 									<input type="number" class="form-control" name="follower" placeholder="จำนวนผู้ติดตาม">
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6">
-								<button type="submit" class="btn btn-default btn-block"><b>ฉันจะไปร่วมงาน !</b></button>
-							</div>
+							<!-- ปุ่มจะไปร่วมงาน -->
 							<div class="col-md-6 col-sm-6">
 								<button type="submit" class="btn btn-default btn-block"
-									style="background: #9e9e9ead;">ฉันไม่สะดวก</button>
+									onclick="document.getElementById('rsvpForm').action='exec/reg.php'">
+									<b>ฉันจะไปร่วมงาน !</b>
+								</button>
+							</div>
+
+							<!-- ปุ่มไม่สะดวก -->
+							<div class="col-md-6 col-sm-6">
+								<button type="submit" class="btn btn-default btn-block"
+									style="background: #9e9e9ead;"
+									onclick="document.getElementById('rsvpForm').action='cannotcome.php'">
+									ฉันไม่สะดวก
+								</button>
 							</div>
 						</form>
 					</div>
