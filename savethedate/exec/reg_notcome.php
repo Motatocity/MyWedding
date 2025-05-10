@@ -30,8 +30,8 @@
         }
     }
 
-    $sql = "message (name, `group`, relation, message, img, u_date, status) 
-    VALUES ('$guestname', '$group', '$relation', '$message', '$imgPath', '$u_date', 1)";
+    $sql = "INSERT INTO message (`name`, `group`, relation, `message`, img, u_date, `status`) 
+            VALUES ('$guestname', '$group', '$relation', '$message', '$imgPath', '$u_date', 1)";
     $conn->query($sql);
 
     $conn->close();
