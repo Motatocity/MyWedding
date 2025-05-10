@@ -305,6 +305,7 @@ p, span, div {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
+  background-position: 0 0;
 }
 .fh5co-cover .overlay {
   z-index: 0;
@@ -322,6 +323,7 @@ p, span, div {
 @media screen and (max-width: 768px) {
   .fh5co-cover {
     height: 600px;
+    background-position: 600% 0;
   }
 }
 .fh5co-cover .display-t,
