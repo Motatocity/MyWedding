@@ -2,6 +2,7 @@
 
     // Include the database connection
     include('db.php');
+    date_default_timezone_set('Asia/Bangkok');
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get form values
