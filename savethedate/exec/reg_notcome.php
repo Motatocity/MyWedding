@@ -9,39 +9,30 @@
     // รับข้อมูลจากฟอร์ม
     $group = $_POST['group'] ?? '';
     $relation = $_POST['relation'] ?? '';
-    $name = $_POST['guestname'] ?? '';
+    $guestname = $_POST['guestname'] ?? '';
     $message = $_POST['message'] ?? '';
     $u_date = date('Y-m-d H:i:s'); // Current timestamp
-    $imgPath = null; 
-
-    // ใส่ record เปล่าเพื่อเอา id ก่อน
-    $stmt = $conn->prepare("INSERT INTO message (name, `group`, relation, message, img, u_date, status) VALUES (?, ?, ?, ?, ?, ?, 1)");
-    $stmt->bind_param("sssss", $name, $group, $relation, $message, $u_date, $imgPath);
-    $stmt->execute();
-    $insertId = $stmt->insert_id;
-    $stmt->close();
+    $imgPath = ""; 
 
     // จัดการกับการอัปโหลดรูป
     if (isset($_FILES['giftImage']) && $_FILES['giftImage']['error'] == 0) {
         $uploadDir = "../img_promptpay/";
         $ext = pathinfo($_FILES['giftImage']['name'], PATHINFO_EXTENSION);
         $timestamp = date("YmdHis");
-        $newFileName = $insertId . "_" . $timestamp . "." . strtolower($ext);
+        $newFileName = "promptpay_" . $timestamp . "." . strtolower($ext);
         $fullPath = $uploadDir . $newFileName;
 
         $allowed = ['jpg', 'jpeg', 'png'];
         if (in_array(strtolower($ext), $allowed)) {
             if (move_uploaded_file($_FILES['giftImage']['tmp_name'], $fullPath)) {
                 $imgPath = "img_promptpay/" . $newFileName;
-
-                // อัปเดตชื่อภาพกลับเข้า DB
-                $stmt = $conn->prepare("UPDATE message SET img = ? WHERE id = ?");
-                $stmt->bind_param("si", $imgPath, $insertId);
-                $stmt->execute();
-                $stmt->close();
             }
         }
     }
+
+    $sql = "message (name, `group`, relation, message, img, u_date, status) 
+    VALUES ('$guestname', '$group', '$relation', '$message', '$imgPath', '$u_date', 1)";
+    $conn->query($sql);
 
     $conn->close();
     header("Refresh: 10; URL=../index.php");
