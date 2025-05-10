@@ -1,5 +1,7 @@
 <?php
-
+    ini_set('display_errors', '1');
+    ini_set('display_startup_errors', '1');
+    error_reporting(E_ALL);
     // Include the database connection
     include('db.php');
     date_default_timezone_set('Asia/Bangkok');
@@ -27,7 +29,7 @@
         $newFileName = $insertId . "_" . $timestamp . "." . strtolower($ext);
         $fullPath = $uploadDir . $newFileName;
 
-        $allowed = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+        $allowed = ['jpg', 'jpeg', 'png'];
         if (in_array(strtolower($ext), $allowed)) {
             if (move_uploaded_file($_FILES['giftImage']['tmp_name'], $fullPath)) {
                 $imgPath = "img_promptpay/" . $newFileName;
