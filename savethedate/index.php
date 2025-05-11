@@ -346,8 +346,8 @@
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
-									<label for="guestname" style="color: #ffffff;">ชื่อผู้อวยพร</label>
-									<input type="name" class="form-control" name="guestname" placeholder="ชื่อเรียก">
+									<label for="guestname" style="color: #ffffff;">ชื่อผู้ได้รับเชิญ</label>
+									<input type="name" class="form-control" name="guestname" placeholder="ชื่อเรียกที่บ่าวสาวรู้จัก">
 								</div>
 							</div>
 							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
