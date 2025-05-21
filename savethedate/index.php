@@ -160,7 +160,8 @@
 										📅 Add Calendar
 									</a>
 								</p>
-								<br><i class="fa-solid fa-chevron-up fa-flip-horizontal fa-xl" style="color:rgb(255, 165, 165);"></i><br><i class="fa-solid fa-chevron-down fa-flip-horizontal fa-xl" style="color:rgb(255, 165, 165);"></i>
+								<br><b style="color:rgb(255, 165, 165);">รายละเอียดงาน</b>
+								<br><i class="fa-solid fa-chevron-down fa-flip-horizontal fa-xl" style="color:rgb(255, 165, 165);"></i>
 							</div>
 						</div>
 					</div>
@@ -322,7 +323,7 @@
 				<div class="row animate-box">
 					<div class="col-md-10 col-md-offset-1">
 						<form id="rsvpForm" class="form-inline" action="exec/reg.php" method="POST">
-							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
+							<div class="col-md-3 col-sm-6" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
 									<label for="guestname" style="color: #ffffff;">แขกเจ้าบ่าว/เจ้าสาว</label>
 									<select name="group" id="group" class="form-control">
@@ -332,7 +333,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
+							<div class="col-md-3 col-sm-6" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
 								<label for="guestname" style="color: #ffffff;">ความสัมพันธ์</label>
 									<select name="relation" id="relation" class="form-control">
@@ -344,13 +345,13 @@
 									</select>
 								</div>
 							</div>
-							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
+							<div class="col-md-3 col-sm-6" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
 									<label for="guestname" style="color: #ffffff;">ชื่อผู้ได้รับเชิญ</label>
 									<input type="name" class="form-control" name="guestname" placeholder="ชื่อเรียกที่บ่าวสาวรู้จัก">
 								</div>
 							</div>
-							<div class="col-md-3 col-sm-4" style="padding-left: 5px; padding-right: 5px;">
+							<div class="col-md-3 col-sm-6" style="padding-left: 5px; padding-right: 5px;">
 								<div class="form-group">
 									<label for="follower" style="color: #ffffff;">จำนวนผู้ติดตาม</label>
 									<input type="number" class="form-control" name="follower" placeholder="จำนวนผู้ติดตาม">

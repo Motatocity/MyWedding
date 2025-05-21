@@ -79,20 +79,21 @@
             transform: rotateX(180deg);
         }
         .envelope-container.open .letter {
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -70%);
         }
     </style>
 </head>
 <body>
     <div class="envelope-container" id="envelope">
         <div class="envelope">
-            <div class="flap"></div>
             <div class="letter">
                 <h1>Book & Tae Wedding</h1>
                 <p>You are invited to our special day!</p>
+                
             </div>
             <div class="bottom-envelope"></div>
         </div>
+        <div class="flap"></div>
     </div>
     <script>
         document.getElementById("envelope").addEventListener("click", function() {
