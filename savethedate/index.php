@@ -48,6 +48,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
 	<style>
+		html {
+			scroll-behavior: smooth;
+		}
         .calendar-button-google {
             display: inline-block;
             background-color: rgb(117, 73, 84);
@@ -109,7 +112,6 @@
 <body>
 
 	<div class="fh5co-loader"></div>
-
 	<div id="page">
 		<!--nav class="fh5co-nav" role="navigation">
 			<div class="container">
@@ -154,14 +156,13 @@
 									</div>
 								</div><br>
 								<p>
-									<!--a href="webcal://book-tae-the-wedding.com/savethedate/WeddingDay.ics" class="calendar-button-ios">📅 Add to iOS Calendar</a-->
-									<a class="calendar-button-google" target="_blank"
+									<!-- a class="calendar-button-google" target="_blank"
 									href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Book❤️Tae%20Wedding%20Day%20🤵👰&dates=20250914T043000Z/20250914T070000Z&details=วันอาทิตย์ที่%2014%20กันยายน%202568%20ห้อง%20INFINITY%20BALLROOM%20โรงแรม%20Pullman%20Bangkok%20King%20Power&location=Pullman Bangkok King Power Hotel">
 										📅 Add Calendar
-									</a>
+									</a -->
 								</p>
-								<br><b style="color:rgb(255, 165, 165);">รายละเอียดงาน</b>
-								<br><i class="fa-solid fa-chevron-down fa-flip-horizontal fa-xl" style="color:rgb(255, 165, 165);"></i>
+								<br><a href="#fh5co-started"><b style="color:rgb(255, 165, 165);">ลงชื่อเข้าร่วมงาน</b>
+								<br><i class="fa-solid fa-chevron-down fa-flip-horizontal fa-xl" style="color:rgb(255, 165, 165);"></i></a>
 							</div>
 						</div>
 					</div>
